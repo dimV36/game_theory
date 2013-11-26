@@ -1,10 +1,7 @@
 __author__ = 'dimv36'
-from enum import Enum
+from utils.enum import EnumValue
 
 
-class GameTypeInfo(Enum):
-    not_perfect = 1
-    perfect = 2
-
-if __name__ == "__main__":
-    pass
+class GameTypeInfo():
+    not_perfect = EnumValue(index=1, value="Несовершенная информация")
+    perfect = EnumValue(index=2, value="Совершенная информация")
