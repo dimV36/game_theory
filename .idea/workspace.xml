@@ -26,7 +26,7 @@
       <file leaf-file-name="TimberCalc.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TimberCalc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="66" selection-start="697" selection-end="697" vertical-scroll-proportion="0.72148544" vertical-offset="148" max-vertical-offset="795">
+            <state line="35" column="68" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.47285464" vertical-offset="255" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -115,7 +115,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,6 +177,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,7 +559,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TimberCalc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="66" selection-start="697" selection-end="697" vertical-scroll-proportion="0.72148544" vertical-offset="148" max-vertical-offset="795">
+        <state line="35" column="68" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.47285464" vertical-offset="255" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
