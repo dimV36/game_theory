@@ -1,0 +1,1 @@
+/usr/bin/dot /home/dimv36/PycharmProjects/game_theory/examples/example.txt -o /home/dimv36/PycharmProjects/game_theory/examples/example.png -Tpng 

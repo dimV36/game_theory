@@ -1,0 +1,16 @@
+digraph img_001 {
+	rankdir=TB;
+	fontname=verdana;
+	charset= "UTF-8";
+	P [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10";label="Прохожий"];
+	H [shape=box;fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10";label="Хулиган"];
+	
+	T1 [shape=box3d; label="0;1"];
+	T2 [shape=box3d; label="-1;-1"];
+	T3 [shape=box3d; label="1;0"];
+	
+	P -> T1 [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10";label="Отдавать"];
+	P -> H [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10";label="Не отдавать"];
+	H -> T2 [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10";label="Взорвать"];
+	H -> T3 [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10";label="Не взрывать"];
+}
