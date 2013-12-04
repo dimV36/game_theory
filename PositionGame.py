@@ -41,7 +41,8 @@ class PositionGame():
                 else:
                     print("Ошибка при конвертации")
             if system() == "Windows":
-                command = "\"C:\Program Files (x86)\Graphviz2.34\\bin\dot.exe\" " + "\"{0}\"".format(file_name) + " -o " + "{0}".format(png_name) + ".png -Tpng"
+                command = "\"C:\Program Files (x86)\Graphviz2.34\\bin\dot.exe\" " + "\"{0}\"".format(file_name) + \
+                          "-o " + "{0}".format(png_name) + ".png -Tpng"
                 print(command)
                 if check_call(command, shell=True) == 0:
                     print("Успешно сконвертировано в {0}.png".format(png_name))

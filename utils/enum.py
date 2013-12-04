@@ -55,7 +55,7 @@ class EnumValue(object):
 
 
 class RichEnumValue(object):
-    def __init__(self, canonical_name, display_name, *args, **kwargs):
+    def __init__(self, canonical_name, display_name):
         self.canonical_name = canonical_name
         self.display_name = display_name
 
@@ -92,8 +92,8 @@ class RichEnumValue(object):
 
 
 class OrderedRichEnumValue(RichEnumValue):
-    def __init__(self, index, canonical_name, display_name, *args, **kwargs):
-        super(OrderedRichEnumValue, self).__init__(canonical_name, display_name, args, kwargs)
+    def __init__(self, index, canonical_name, display_name):
+        super(OrderedRichEnumValue, self).__init__(canonical_name, display_name)
         if not isinstance(index, int):
             raise EnumConstructionException("Index must be an integer type, not: {0}".format(type(index)))
         if index < 0:
@@ -101,11 +101,13 @@ class OrderedRichEnumValue(RichEnumValue):
         self.index = index
 
     def __repr__(self):
-        return "{0} - index: {1}  canonical_name: '{2}'  display_name: '{3}'".format(
-                        self.__class__.__name__,
-                        self.index,
-                        self.canonical_name,
-                        self.display_name)
+        return "{0} - index: {1}  canonical_name: '{2}'  display_name: '{3}'".format(self.__class__.__name__,
+                                                                                     self.index,
+                                                                                     self.canonical_name,
+                                                                                     self.display_name)
+
+    def __str__(self):
+        return "{0}"
 
     def __cmp__(self, other):
         if other is None:

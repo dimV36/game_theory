@@ -19,8 +19,7 @@ class PlayerAction:
                                       self.position)
 
     def __eq__(self, other):
-        return self.action == other.action and self.probability == other.probability and \
-               self.position == other.position
+        return self.action == other.action and self.probability == other.probability and self.position == other.position
 
     def __ne__(self, other):
         return not self.__eq__(other)
