@@ -41,7 +41,8 @@ class PositionGame():
                 else:
                     print("Ошибка при конвертации")
             if system() == "Windows":
-                command = "c:\Program Files (x86)\Graphviz2.34\\bin\dot.exe " + file_name + " -o " + png_name + ".png -Tpng"
+                command = "\"C:\Program Files (x86)\Graphviz2.34\\bin\dot.exe\" " + "\"{0}\"".format(file_name) + " -o " + "{0}".format(png_name) + ".png -Tpng"
+                print(command)
                 if check_call(command, shell=True) == 0:
                     print("Успешно сконвертировано в {0}.png".format(png_name))
                 else:
@@ -49,11 +50,12 @@ class PositionGame():
         else:
             script = open(script_file, 'r')
             command = script.read()
+            print(command)
             if check_call(command, shell=True) == 0:
                 print("Конвертация прошла успешно")
             else:
                 print("Ошибка при конвертации")
 
 
-#if __name__ == "__main__":
-#    print(PositionGame.do_dot(script_file="/home/dimv36/PycharmProjects/game_theory/examples/dot.txt"))
+if __name__ == "__main__":
+    PositionGame.do_dot(script_file="C:\examples\dot.cmd")
